@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch</title>
+  </head>
+  <body>
+    <script>
+      //   var angka = prompt('masukan angka');
+
+      //   switch (angka) {
+      //     case '1':
+      //       alert('anda memasukan angka 1');
+      //       break;
+      //     case '2':
+      //       alert('anda memasukan angka 2');
+      //       break;
+      //     case '3':
+      //       alert('anda memasukan angka 3');
+      //       break;
+      //     default:
+      //       alert('angka yang anda masukan salah');
+      //       break;
+      // }
+      //contoh kasus
+      var item = prompt('masukan nama makanan / minuman \n (contoh: nasi, daging, susu, hamburger, softdrink)');
+
+      switch (item) {
+        case 'nasi':
+        case 'daging':
+        case 'susu':
+          alert('makanan / minuman SEHAT!');
+          break;
+        case 'hamburger':
+        case 'softdrink':
+          alert('makanan / minuman TIDAK SEHAT!');
+          break;
+        default:
+          alert('anda memasukan nama makanan / minuman yang salah');
+          break;
+      }
+    </script>
+  </body>
+</html>

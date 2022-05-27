@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar css3</title>
+
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            background: blue;
+            border-radius: 10px;
+        }
+
+        #box2 {
+            height: 100px;
+            width: 100px;
+            background: yellow;
+            border-radius: 50%;
+        }
+
+        #box3 {
+            height: 100px;
+            width: 100px;
+            background: red;
+            /*box-shadow: horizontal vertikal blur spread colors;*/
+            box-shadow: 5px 10px 5px 5px black;
+        }
+
+        /*box sizing & vendor prefix*/
+        #box4 {
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            border: 1px solid black;
+            background: blue;
+            box-sizing: border-box;
+
+            /*vendor prefix
+            -webkit- box-sizing: border-box;
+            -moz- box-sizing: border-box;
+            -o- box-sizing: border-box;
+            -ms- box-sizing: border-box;
+            */
+
+        }
+
+        #box5 {
+            height: 100px;
+            width: 100px;
+            background: green;
+        }
+
+        #text1 {
+            /*text-shadow:horizontal vertical blur-radius color;*/
+            text-shadow: 10px 10px 5px black;
+        }
+
+        #div1 {
+            width: 50px;
+            /*overflow: scroll;*/
+            /*text-overflow: ellipsis;*/
+            word-wrap: break-word;
+        }
+
+        #div2 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transform: translate(50px, 50px);
+        }
+
+        #div3 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            transform: rotate(45deg);
+        }
+
+        #div4 {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transform: scale(1.5, 1.5);
+        }
+
+        #div5 {
+            width: 100px;
+            height: 100px;
+            background: aqua;
+            transform: skewX(10deg);
+            transform: skewY(10deg);
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            margin-bottom: 5px;
+            transition: width 1s, 1s;
+        }
+
+        #div6:hover {
+            width: 200px;
+        }
+
+        #div7:hover {
+            transition-delay: 1s;
+            background: red;
+        }
+
+        #div8:hover {
+            transition-timing-function: ease-in-out;
+            height: 120px;
+        }
+
+        #div9 {
+            perspective: 100px;
+            perspective-origin: 50%, 100%;
+        }
+
+        #div10 {
+            background: red;
+            transform: rotateX(45deg);
+        }
+
+        #div11 {
+            perspective: 100px;
+            perspective-origin: 60% 10%;
+        }
+
+        #div12 {
+            background: red;
+            transform: translateZ(1px) rotateX(25deg);
+            transition: 2s;
+        }
+
+        #div12:hover {
+            transform: translateZ(10px) rotateX(50deg);
+        }
+
+        #div13 {
+            perspective: 100px;
+            perspective-origin: 60% 10%;
+        }
+
+        #div14 {
+            background: red;
+            transform: scaleZ(1) rotateY(45ged);
+            transition: 2s;
+            border: 1px solid black;
+        }
+
+        #div14:hover {
+            transform: scaleZ(1.5) rotateY(45deg);
+        }
+
+        #card1 {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            transition: 2s;
+            border: 2px solid black;
+            transform-style: preserve-3d;
+        }
+
+        #front,
+        #back {
+            background: yellow;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 200px;
+            width: 200px;
+            backface-visibility: hidden;
+        }
+
+        #front {
+            background: red;
+        }
+
+        #back {
+            background: tomato;
+            transform: rotateY(180deg);
+        }
+
+        #card1:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Flipcard</h1>
+    <div id="card">
+        <div id="card1">
+            <div id="front">Sekolah</div>
+            <div id="back">Mading</div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <h1>Scale</h1>
+    <div id="div13">
+        <div id="div14">Div5</div>
+    </div>
+
+    <h1>Translate & Rotate</h1>
+    <div id="div11">
+        <div id="div12"></div>
+    </div>
+
+    <h1>perspective</h1>
+    <div id="div9">
+        <div id="div10"></div>
+    </div>
+
+    <h1>Transition</h1>
+    <div id="div6"></div>
+    <div id="div7"></div>
+    <div id="div8"></div>
+
+
+    <h1>scale</h1>
+    <div id="div4"></div>
+
+    <h1>skew</h1>
+    <div id="div5"></div>
+
+
+    <h1>Tranlate</h1>
+    <div id="div2"></div>
+
+    <h1>Rotate</h1>
+    <div id="div3"></div>
+
+    <h1>Word Wrap - text Overflowe</h1>
+    <p id="div1">SekolahKoding adalh tempat belajar pemrogramman noline</p>
+
+    <h1>Text Shadow</h1>
+    <p id="text1">SekolahKoding</p>
+
+    <h1>Border Radius</h1>
+    <div id="box"></div>
+    <div id="box2"></div>
+
+    <h1>Box Shadow</h1>
+    <div id="box3"></div>
+
+    <h1>Box Sizing</h1>
+    <div id="box4"></div>
+    <div id="box5"></div>
+
+</body>
+
+</html>

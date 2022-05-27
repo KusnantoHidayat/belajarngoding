@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-image</title>
+    <style>
+        body :not(h1) {
+            color: red;
+        }
+
+        p:last-child {
+            color: blue;
+        }
+
+        ul :nth-child(2) {
+            text-decoration: line-through;
+        }
+
+        ul :nth-child(odd) {
+            text-decoration: underline;
+        }
+
+        #gambar {
+            height: 650px;
+            background-image: url(https://sukadunia.net/wp-content/uploads/2019/10/Menyambungkan-Koneksi-WIFI-ke-Printer.jpg);
+            background-size: cover;
+            border: 12px dotted black;
+            background-clip: padding-box;
+            background-origin: border-box;
+            padding: 20px;
+        }
+
+        @font-face {
+            font-family: standard;
+            src: url();
+        }
+
+        #div1 {
+            font-family: 'ZCOOL KuaiLe', cursive;
+            width: 150px;
+            height: 150px;
+            background: yellow;
+            overflow-y: hidden;
+            resize: both;
+            opacity: 0.4;
+        }
+
+        img {
+            opacity: 0.5;
+            transition: 2s;
+        }
+
+        img:hover {
+            opacity: 1;
+        }
+
+        input:checked {
+            width: 50px;
+        }
+
+        input:enabled {
+            border: 2px solid blue;
+        }
+
+        input:disabled {
+            border: 2px solid red;
+        }
+
+        input:invalid {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>selektor - pseudo classes</h1>
+    <div>
+        <p>pragraf pertama</p>
+        <p>paragraf kedua</p>
+        <p>paragraf ketiga</p>
+    </div>
+    <br>
+
+    <h1>Nth Child</h1>
+    <ul>
+        <li>List pertama</li>
+        <li>list kedua</li>
+        <li>list ketiga</li>
+        <li>list keempat</li>
+    </ul><br><br>
+
+    <h1>Input</h1>
+    <input type="checkbox">male
+    <input type="checkbox" checked>Famale
+    <br><br>
+
+    <input type="text" placeholder="nama lengkap">
+    <input type="text" placeholder="nama pendek">
+    <input type="text" placeholder="kota asal" disabled>
+    <input type="email" placeholder="email">
+    <br><br><br><br>
+
+    sekolah koding
+    <div id="gambar">Text Here</div><br>
+    <h2>Overflow, resize dan Opacity</h2>
+    <div id="div1">
+        text here, belajar koding di sekolah koding,
+        text here, belajar koding di sekolah koding,
+        text here, belajar koding di sekolah koding,
+        text here, belajar koding di sekolah koding,
+        text here, belajar koding di sekolah koding,
+        text here, belajar koding di sekolah koding,
+        text here, belajar koding di sekolah koding,
+    </div><br>
+    <img src="https://sukadunia.net/wp-content/uploads/2019/10/Menyambungkan-Koneksi-WIFI-ke-Printer.jpg"
+        alt="gambar komputer" width="300"><br>
+
+
+</body>
+
+</html>

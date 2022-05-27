@@ -1,0 +1,111 @@
+<!--Tips CSS-->
+
+<h1>CSS TIPS</h1><br><br>
+
+
+
+
+
+
+<br><br><br><br><br>
+<div id="wrap">
+    <img src="https://i.pinimg.com/originals/4b/ea/db/4beadbfc8dc37b1f478eba910a90dfad.jpg" alt="">
+    <div id="info">
+        <p>Baju Mantap <span>2500,-Rp</span></p>
+        <a href="">Belanja</a>
+    </div>
+</div>
+
+<a href="#" class="button no-1">Berhasil</a>
+<a href="#" class="button no-2">Berbahaya</a>
+<a href="#" class="button no-3">Hati-hati</a>
+
+<Style media="screen">
+    body {
+        margin: 15% 15%;
+        font-family: sans-serif;
+    }
+
+
+
+
+    #wrap {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #info {
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding-top: 30%;
+        color: white;
+        font-size: 20px;
+    }
+
+    #info span {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        border: 1px solid white;
+        padding: 3px;
+    }
+
+    a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    #wrap img {
+        width: 100%;
+        height: auto;
+    }
+
+    #wrap #info {
+        display: none;
+    }
+
+    #wrap:hover #info {
+        display: block;
+    }
+
+    .button {
+        text-decoration: none;
+        color: white;
+        display: block;
+        width: 200px;
+        padding: 5px 10px;
+        margin: 10px;
+        text-align: center;
+        font-size: 24px;
+        border-radius: 10px;
+    }
+
+    .no-1 {
+        background-color: rgba(58, 151, 158, 0.7);
+    }
+
+    .no-1:hover {
+        background-color: rgb(58, 151, 158);
+    }
+
+    .no-2 {
+        background-color: rgb(133, 45, 52);
+        box-shadow: 0 4px 3px 0 rgb(49, 48, 48);
+    }
+
+    .no-3 {
+        background-color: rgb(161, 163, 23);
+    }
+</Style>

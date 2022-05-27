@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Jquery</title>
+  </head>
+  <body>
+    <h1>Kemana kamu ingin pergi</h1>
+    <ul class="lokasi">
+      <li class="bandung">
+        Bandung
+        <button id="kebandung">Pergi</button>
+        <button id="hidebandung">H</button>
+        <button id="hapusbandung">X</button>
+      </li>
+      <li>Surabaya</li>
+      <li>Jakarta</li>
+    </ul>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#kebandung').on('click', function () {
+          alert('Saya Suka Ke Bandung');
+        });
+        $('#hapusbandung').on('click', function () {
+          $('.bandung').remove();
+          alert('Saya Gak Suka Bandung :)');
+        });
+        $('#hidebandung').on('click', function () {
+          $('.bandung').slideUp(2000);
+        });
+      });
+    </script>
+  </body>
+</html>

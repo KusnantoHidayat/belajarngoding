@@ -1,0 +1,113 @@
+
+/*kondisi biasa*/
+.menu:link {
+    font-family: 'Courier New', Courier, monospace;
+    background: grey;
+    color:white;
+}
+
+/*kondisi setelah di kunjungi*/
+.menu:visited{
+    background: blue;
+    color:white;
+
+}
+
+/*kondisi hover mouse berada di atas*/
+.menu:hover{
+    background: green;
+    color:white;
+}
+
+/*sedang klik*/
+.menu:active{
+    background: white;
+    color:white;
+
+}
+
+.menu{
+    display: inline-block;
+    text-decoration: none;
+
+   /* border: 1px;
+    border-style: solid;
+    border-color: black;*/
+    border: 2px solid black;
+    padding: 10px 5px;
+
+}
+
+
+nav{
+   /*margin: top right botton left*/
+   margin: 10px 0 50px 0;
+}
+
+
+
+
+h2{
+    color: darkgrey;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family:arial;
+}
+header{
+    text-decoration: none;
+}
+
+body{
+    /*background-color: #dfdfdf;
+    background-image: url(https://sekolahkoding.com/img/logo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right; */
+    background: #dfdfdf url(https://sekolahkoding.com/img/logo.png) no-repeat fixed right;
+    font-family: sans-serif;
+}
+
+h1 {
+    color:darkorchid;
+    text-align: center;
+    text-decoration: underline;
+}
+#lorem{
+    text-align: justify;
+    text-indent: 30px;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+#selamat{
+    text-align: center;
+    color: darkgrey;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* bagian member*/
+
+#menu_member{
+    position: relative;
+    
+}
+
+form{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*kontak*/
+
+div a{
+    background: yellow;
+    margin:10px 0 50px 0;
+    border: 2px solid black;
+    padding: 10px 10px;
+}
+
+div a{
+    margin: 10 0 50 0;
+}
